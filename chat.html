@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Chat</title>
+   
+    
+    <script data-main="main" src="js/require.js"></script>
+    <script src="chat.js"></script>
+    <script>
+       window.onload = setTimeout(function() {
+               connect();
+           }, 1000);
+    </script>
+</head>
+
+<body onload="">
+    <div style="text-align: center;">
+        <input type="text" name="room" id="room" placeholder="Room">
+        <input type="text" name="msg" id="msg" placeholder="Message">
+        <input type="button" onclick="connect()" name="connect" value="Connect">
+        <input type="button" onclick="disconnect()" name="disconnect" value="Disconnect">
+        <input type="button" onclick="createRoom()" name="create_room" value="Create Room">
+        <input type="button" onclick="getRoomList()" name="create_room" value="Room List">
+        <input type="button" onclick="joinGroup()" name="join_room" value="Join Room">
+         <input type="button" onclick="sendGroupMsg()" name="group_msg" value="Send Group Msg">
+         <input type="button" onclick="sendMsg()" name="msg" value="Send Msg">
+    </div>
+    
+   <ol>
+</ol>
+</body>
+</html>
