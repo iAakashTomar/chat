@@ -543,7 +543,9 @@ function joinGroup()
 function sendMsg(JID,MSG)
 {
     debugger
-Chat.sendMessage("1@localhost", "kshdfkjh", "chat");
+// var room_name = $('#room').val() + '@localhost';
+var msg = $('#msg').val();    
+Chat.sendMessage('1@localhost', msg, "chat");
 }
 
 
